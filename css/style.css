@@ -1,0 +1,75 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family: 'Anek Bangla', sans-serif;
+}
+
+/* variables */
+:root {
+    --color1: #000;
+    --color2: #fff;
+    --color3: #ea0f1e;
+}
+
+/* styles */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: var(--color1);
+    color: var(--color2);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+/* container with image */
+.containerImage {
+    height: 100%;
+    width: 50%;
+}
+
+/* container text with dom */
+.containerText {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate(-60px, -60px);
+}
+
+.containerText .white {
+    height: 25%;
+    width: 50%;
+    color: var(--color2);
+    font-size: clamp(1rem, 10vw, 12rem);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.containerText .red {
+    height: 25%;
+    width: 50%;
+    color: var(--color3);
+    font-size: clamp(1rem, 10vw, 12rem);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
