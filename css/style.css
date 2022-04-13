@@ -6,9 +6,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     outline: none;
     list-style: none;
     font-family: 'Anek Bangla', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
 }
 
 /* variables */
@@ -29,6 +38,7 @@ body {
     color: var(--color2);
     display: flex;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     overflow-x: hidden;
 }
 
@@ -44,10 +54,18 @@ body {
     width: 50%;
     display: flex;
     align-items: flex-end;
+    -ms-flex-align: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     flex-direction: column;
+    -ms-flex-direction: column;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     transform: translate(-60px, -60px);
+    -webkit-transform: translate(-60px, -60px);
+    -moz-transform: translate(-60px, -60px);
+    -o-transform: translate(-60px, -60px);
+    -ms-transform: translate(-60px, -60px);
 }
 
 .containerText .white {
@@ -58,8 +76,11 @@ body {
     font-weight: 600;
     display: flex;
     align-items: center;
+    -ms-flex-align: center;
     justify-content: flex-start;
+    -ms-flex-line-pack: start;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 .containerText .red {
@@ -70,6 +91,92 @@ body {
     font-weight: 600;
     display: flex;
     align-items: center;
+    -ms-flex-align: center;
     justify-content: flex-start;
+    -ms-flex-line-pack: start;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+/* DOM */
+
+/* header of about */
+.backHTML {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: flex-end;
+    -ms-flex-line-pack: end;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    position: fixed;
+}
+
+.ulBack .back {
+    margin-right: 120px;
+    font-size: clamp(1rem, 10vw, 2rem);
+    font-weight: 600;
+}
+
+/* main of about */
+.newAbout {
+    height: 85%;
+    width: 100%;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: start;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.newAbout .divTitleAbout {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: start;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.newAbout span {
+    font-size: clamp(1rem, 10vw, 8rem);
+    font-weight: 600;
+}
+
+.divContentAbout {
+    height: 150%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.skills {
+    height: 150%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.imgSkills {
+    height: clamp(1rem, 10vw, 10rem);
+    width: clamp(1rem, 10vw, 10rem);
 }
