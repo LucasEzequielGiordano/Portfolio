@@ -100,7 +100,8 @@ body {
 
 /* DOM */
 
-/* header of about */
+/* header */
+/* fixed for back to HTML */
 .backHTML {
     height: 15%;
     width: 100%;
@@ -115,9 +116,10 @@ body {
 }
 
 .ulBack .back {
-    margin-right: 120px;
+    margin-right: clamp(30px, 8vw, 120px);
     font-size: clamp(1rem, 10vw, 2rem);
     font-weight: 600;
+    color: var(--color3);
 }
 
 /* main of about */
@@ -135,7 +137,8 @@ body {
 }
 
 .newAbout .divTitleAbout {
-    height: 100%;
+    height: 135%;
+    width: 100%;
     display: flex;
     align-items: center;
     -ms-flex-align: center;
@@ -148,22 +151,32 @@ body {
 .newAbout span {
     font-size: clamp(1rem, 10vw, 8rem);
     font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .divContentAbout {
-    height: 150%;
+    height: 115%;
     width: 50%;
     display: flex;
     align-items: center;
     -ms-flex-align: center;
     justify-content: center;
     -ms-flex-line-pack: center;
+    flex-direction: column;
+    -ms-flex-direction: column;
     flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
+.divContentAbout p {
+    font-size: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+}
+
 .skills {
-    height: 150%;
+    height: 50%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -177,6 +190,7 @@ body {
 }
 
 .imgSkills {
-    height: clamp(1rem, 10vw, 10rem);
-    width: clamp(1rem, 10vw, 10rem);
+    height: clamp(1rem, 10vw, 12rem);
+    width: clamp(1rem, 10vw, 12rem);
+
 }
