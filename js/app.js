@@ -6,16 +6,20 @@ const contact = document.getElementById("contact")
 
 // events about
 about.addEventListener("mouseover", () => {
-    about.style.cursor = "pointer"
-    about.textContent = ""
+    // add text HTML
     about.textContent = "About"
+
+    // add styles
+    about.style.cursor = "pointer"
     about.style.transform = "translate(25px)"
     about.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
 })
 
 about.addEventListener("mouseout", () => {
-    about.textContent = ""
+    // add text HTML
     about.textContent = "Hello."
+
+    // add Styles
     about.style.transform = "translate(0px)"
     about.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
 })
@@ -60,41 +64,51 @@ about.addEventListener("click", () => {
 
 // events work
 work.addEventListener("mouseover", () => {
-    work.style.cursor = "pointer"
-    work.textContent = ""
+    // add text HTML
     work.textContent = "Work"
+
+    // add styles
+    work.style.cursor = "pointer"
     work.style.transform = "translate(25px)"
     work.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
 })
 
 work.addEventListener("mouseout", () => {
-    work.textContent = ""
+    // add HTML
     work.textContent = "I am"
+
+    // add styles
     work.style.transform = "translate(0px)"
     work.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
 })
 
 work.addEventListener("click", () => {
+    // empty body
     body.textContent = ""
 })
 
 // events contact
 contact.addEventListener("mouseover", () => {
-    contact.style.cursor = "pointer"
-    contact.textContent = ""
+    // add text HTML
     contact.textContent = "Contact"
+
+    // add styles
+    contact.style.cursor = "pointer"
     contact.style.transform = "translate(25px)"
     contact.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
 })
 
 contact.addEventListener("mouseout", () => {
-    contact.textContent = ""
+    // add text HTML
     contact.textContent = "Lucas"
+
+    // add styles
     contact.style.transform = "translate(0px)"
     contact.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
 })
 
 contact.addEventListener("click", () => {
+    // empty body
     body.textContent = ""
 })
 
