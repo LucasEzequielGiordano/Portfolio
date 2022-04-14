@@ -12,6 +12,7 @@
     -ms-box-sizing: border-box;
     outline: none;
     list-style: none;
+    text-decoration: none;
     font-family: 'Anek Bangla', sans-serif;
     user-select: none;
     -webkit-user-select: none;
@@ -115,7 +116,7 @@ body {
 
 .ulBack .back {
     margin-right: clamp(30px, 8vw, 120px);
-    font-size: clamp(1rem, 10vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: 600;
     color: var(--color3);
 }
@@ -157,7 +158,7 @@ body {
 
 .divContentAbout {
     height: 100%;
-    width: 50%;
+    width: 65%;
     display: flex;
     align-items: center;
     -ms-flex-align: center;
@@ -170,7 +171,7 @@ body {
 }
 
 .divContentAbout p {
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 5vw, 2rem);
     text-align: center;
     margin-bottom: 20%;
 }
@@ -192,7 +193,6 @@ body {
 .imgSkills {
     height: clamp(1rem, 10vw, 12rem);
     width: clamp(1rem, 10vw, 12rem);
-
 }
 
 /* DOM contact */
@@ -233,20 +233,51 @@ body {
 
 .divContentContact {
     height: 100%;
-    width: 50%;
+    width: 65%;
+    margin-bottom: 1%;
     display: flex;
     align-items: center;
     -ms-flex-align: center;
     justify-content: center;
     -ms-flex-line-pack: center;
-    flex-direction: column;
-    -ms-flex-direction: column;
+    flex-direction: row;
+    -ms-flex-direction: row;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
 }
 
 .divContentContact p {
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 5vw, 2rem);
     text-align: center;
-    margin-bottom: 10%;
+}
+
+.socials {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.socials div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.socials div a {
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: var(--color3);
 }

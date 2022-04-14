@@ -148,18 +148,29 @@ function clickContact() {
     `
     newContact.innerHTML = `
     <span class="divTitleContact" id="divTitleContact"> Discipline is the best talent </span>
-    <div class="divContentContact" id="divContentContact"><p> I am looking for opportunities to collaborate with companies, agencies, individuals, not only to work for them but I want to bring my experience to work as a team and solve problems in a way that optimizes our experience and knowledge.
-    I want to avoid confrontations that do not lead to anything and favor my colleagues.
-    If all this sounds good to you, then let 's talk about how we can work together.
-    Feel free to contact me through the following platforms:</p></div>
+    <div class="divContentContact" id="divContentContact">
+        <p> I am looking for opportunities to collaborate with companies, agencies, individuals, not only to work for them but I want to bring my experience to work as a team and solve problems in a way that optimizes our experience and knowledge. </p>
+        <p> I want to avoid confrontations that do not lead to anything and favor my colleagues. </p>
+        <p> If all this sounds good to you, then let 's talk about how we can work together. Feel free to contact me through the following platforms: </p>
+    </div>
+    <div class="socials">
+        <div>
+            <a class="mail" id="mail" href="mailto:lucasgiordano2219@gmail.com" target="_blank"> Mail </a>
+            <a class="linkedin" id="linkedin" href="https://www.linkedin.com/in/lucas-giordano-b6045b187/" target="_blank"> Linkedin </a>
+            <a class="github" id="github" href="https://github.com/LucasEzequielGiordano" target="_blank"> GitHub </a>
+        </div>
+    </div>
     `
 
     // append
     body.appendChild(backHTML)
     body.appendChild(newContact)
 
-    // call function back to menu
+    // call functions
     backToMenu()
+    clickMail()
+    clickLinkedin()
+    clickGithub()
 }
 
 // function of events back to menu
@@ -169,8 +180,8 @@ function backToMenu() {
 
     // event mouseover
     back.addEventListener("mouseover", () => {
-        back.style.cursor = "pointer"
         back.textContent = "Lucas.Portfolio"
+        back.style.cursor = "pointer"
         back.style.transform = "translate(-25px)"
         back.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
     })
@@ -185,5 +196,68 @@ function backToMenu() {
     // event window reload on click
     back.addEventListener("click", () => {
         window.location.reload()
+    })
+}
+
+// function of event on click mail in contact
+function clickMail() {
+    // calling the elements
+    const mail = document.getElementById("mail")
+
+    // event mouseover
+    mail.addEventListener("mouseover", () => {
+        mail.textContent = "lucasgiordano2219@gmail.com"
+        mail.style.cursor = "pointer"
+        mail.style.transform = "translate(25px)"
+        mail.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    // event mouseout
+    mail.addEventListener("mouseout", () => {
+        mail.textContent = "Mail"
+        mail.style.transform = "translate(0px)"
+        mail.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+}
+
+// function of event on click linkedin in contact
+function clickLinkedin() {
+    // calling the elements
+    const linkedin = document.getElementById("linkedin")
+
+    // event mouseover
+    linkedin.addEventListener("mouseover", () => {
+        linkedin.textContent = "Lucas Giordano"
+        linkedin.style.cursor = "pointer"
+        linkedin.style.transform = "translate(25px)"
+        linkedin.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    // event mouseout
+    linkedin.addEventListener("mouseout", () => {
+        linkedin.textContent = "Linkedin"
+        linkedin.style.transform = "translate(0px)"
+        linkedin.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+}
+
+// function of event on click github in contact
+function clickGithub() {
+    // calling the elements
+    const github = document.getElementById("github")
+
+    // event mouseover
+    github.addEventListener("mouseover", () => {
+        github.textContent = "@LucasEzequielGiordano"
+        github.style.cursor = "pointer"
+        github.style.transform = "translate(25px)"
+        github.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    // event mouseout
+    github.addEventListener("mouseout", () => {
+        github.textContent = "GitHub"
+        github.style.transform = "translate(0px)"
+        github.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
     })
 }
