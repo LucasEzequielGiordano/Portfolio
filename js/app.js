@@ -77,6 +77,32 @@ contact.addEventListener("mouseout", () => {
 contact.addEventListener("click", clickContact)
 
 /* FUNCTIONS */
+// function of events back to menu
+function backToMenu() {
+    // calling the elements
+    const back = document.getElementById("back")
+
+    // event mouseover
+    back.addEventListener("mouseover", () => {
+        back.textContent = "Lucas.Portfolio"
+        back.style.cursor = "pointer"
+        back.style.transform = "translate(-25px)"
+        back.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    // event mouseout
+    back.addEventListener("mouseout", () => {
+        back.textContent = "Lucas."
+        back.style.transform = "translate(0px)"
+        back.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    // event window reload on click
+    back.addEventListener("click", () => {
+        window.location.reload()
+    })
+}
+
 // function of event on click about
 function clickAbout() {
     // empty body
@@ -124,6 +150,39 @@ function clickAbout() {
 function clickWork() {
     // empty body
     body.textContent = ""
+
+    // create elements
+    const backHTML = document.createElement("header")
+    const newWork = document.createElement("main")
+
+    // declaring classes 
+    body.className = "bodyDom"
+    backHTML.className = "backHTML"
+    newWork.className = "newWork"
+
+    // content HTML
+    backHTML.innerHTML = `
+    <ul class="ulBack">
+    <li class="back" id="back">Lucas.</li>
+    </ul>
+    `
+    newWork.innerHTML = `
+    <div class="divContentWork" id="divContentWork">
+        <span class="divTitleWork" id="divTitleWork"> Trabajo 1 </span>
+        <p> Trabajo 1 </p>
+        <span class="divTitleWork" id="divTitleWork"> Trabajo 2 </span>
+        <p> Trabajo 2 </p>
+        <span class="divTitleWork" id="divTitleWork"> Trabajo 3 </span>
+        <p> Trabajo 3 </p>
+    </div>
+    `
+
+    // append
+    body.appendChild(backHTML)
+    body.appendChild(newWork)
+
+    // call function
+    backToMenu()
 }
 
 // function of event on click contact
@@ -147,7 +206,7 @@ function clickContact() {
     </ul>
     `
     newContact.innerHTML = `
-    <span class="divTitleContact" id="divTitleContact"> Discipline is the best talent </span>
+    <span class="divTitleContact" id="divTitleContact"> Contact </span>
     <div class="divContentContact" id="divContentContact">
         <p> I am looking for opportunities to collaborate with companies, agencies, individuals, not only to work for them but I want to bring my experience to work as a team and solve problems in a way that optimizes our experience and knowledge. </p>
         <p> I want to avoid confrontations that do not lead to anything and favor my colleagues. </p>
@@ -171,32 +230,6 @@ function clickContact() {
     clickMail()
     clickLinkedin()
     clickGithub()
-}
-
-// function of events back to menu
-function backToMenu() {
-    // calling the elements
-    const back = document.getElementById("back")
-
-    // event mouseover
-    back.addEventListener("mouseover", () => {
-        back.textContent = "Lucas.Portfolio"
-        back.style.cursor = "pointer"
-        back.style.transform = "translate(-25px)"
-        back.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
-    })
-
-    // event mouseout
-    back.addEventListener("mouseout", () => {
-        back.textContent = "Lucas."
-        back.style.transform = "translate(0px)"
-        back.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
-    })
-
-    // event window reload on click
-    back.addEventListener("click", () => {
-        window.location.reload()
-    })
 }
 
 // function of event on click mail in contact
