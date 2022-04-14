@@ -98,10 +98,8 @@ body {
     -ms-flex-wrap: wrap;
 }
 
-/* DOM */
-
+/* DOM About */
 /* header */
-/* fixed for back to HTML */
 .backHTML {
     height: 15%;
     width: 100%;
@@ -133,11 +131,11 @@ body {
     justify-content: center;
     -ms-flex-line-pack: start;
     flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 .newAbout .divTitleAbout {
-    height: 135%;
+    height: 120%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -145,7 +143,7 @@ body {
     justify-content: center;
     -ms-flex-line-pack: start;
     flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 .newAbout span {
@@ -153,11 +151,12 @@ body {
     font-weight: 600;
     display: flex;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     text-align: center;
 }
 
 .divContentAbout {
-    height: 115%;
+    height: 100%;
     width: 50%;
     display: flex;
     align-items: center;
@@ -167,16 +166,17 @@ body {
     flex-direction: column;
     -ms-flex-direction: column;
     flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 .divContentAbout p {
     font-size: clamp(1rem, 3vw, 2rem);
     text-align: center;
+    margin-bottom: 20%;
 }
 
 .skills {
-    height: 50%;
+    height: 25%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -186,11 +186,67 @@ body {
     flex-direction: row;
     -ms-flex-direction: row;
     flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 .imgSkills {
     height: clamp(1rem, 10vw, 12rem);
     width: clamp(1rem, 10vw, 12rem);
 
+}
+
+/* DOM contact */
+/* main of Contact */
+.newContact {
+    height: 85%;
+    width: 100%;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: start;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.newContact .divTitleContact {
+    height: 125%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: start;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.newContact span {
+    font-size: clamp(1rem, 10vw, 8rem);
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    text-align: center;
+}
+
+.divContentContact {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.divContentContact p {
+    font-size: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+    margin-bottom: 10%;
 }
