@@ -166,14 +166,17 @@ function clickWork() {
     <li class="back" id="back">Lucas.</li>
     </ul>
     `
+
     newWork.innerHTML = `
     <div class="divContentWork" id="divContentWork">
-        <span class="divTitleWork" id="divTitleWork"> Trabajo 1 </span>
-        <p> Trabajo 1 </p>
-        <span class="divTitleWork" id="divTitleWork"> Trabajo 2 </span>
-        <p> Trabajo 2 </p>
-        <span class="divTitleWork" id="divTitleWork"> Trabajo 3 </span>
-        <p> Trabajo 3 </p>
+        <div id="works0">
+            <span class="divTitleWork" id="divTitleWork"><a href="https://lucasezequielgiordano.github.io/Simulador-TiendaDeDulces/" target="_blank">Candy Store</a></span>
+            <p>Web App</p>
+        </div>
+        <div id="works1">
+            <span class="divTitleWork" id="divTitleWork"><a href="https://lucasezequielgiordano.github.io/Movie-App/" target="_blank">Movie App</a></span>
+            <p>Web App</p>
+        </div>
     </div>
     `
 
@@ -183,6 +186,48 @@ function clickWork() {
 
     // call function
     backToMenu()
+
+    // events works 0
+    const works0 = document.getElementById("works0")
+    works0.addEventListener("mouseover", () => {
+        // add text HTML
+        // works.textContent = add image with languages used
+
+        // add styles
+        works0.style.cursor = "pointer"
+        works0.style.transform = "translate(25px)"
+        works0.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    works0.addEventListener("mouseout", () => {
+        // add HTML
+        // works0.textContent = "I am"
+
+        // add styles
+        works0.style.transform = "translate(0px)"
+        works0.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    // event works 1 
+    const works1 = document.getElementById("works1")
+    works1.addEventListener("mouseover", () => {
+        // add text HTML
+        // works.textContent = add image with languages used
+
+        // add styles
+        works1.style.cursor = "pointer"
+        works1.style.transform = "translate(25px)"
+        works1.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
+
+    works1.addEventListener("mouseout", () => {
+        // add HTML
+        // works1.textContent = "I am"
+
+        // add styles
+        works1.style.transform = "translate(0px)"
+        works1.style.transition = "all .4s cubic-bezier(0.2, 0.6, 0.2, 1)"
+    })
 }
 
 // function of event on click contact
